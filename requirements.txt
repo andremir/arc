@@ -4,3 +4,8 @@ google-cloud-bigquery==3.24.0
 pandas==2.2.2
 matplotlib==3.9.0
 toml==0.10.2
+google-auth==2.30.0
+SQLAlchemy==2.0.30
+sqlalchemy-bigquery==1.11.0
+openai==1.33.0
+langchain==0.2.3
