@@ -44,8 +44,8 @@ FROM `{connection_info['project_id']}.{connection_info['dataset_id']}.INFORMATIO
 WHERE table_name = '{connection_info['table_name']}';
 """
 columns_df = run_query(schema_query)
-st.write("Columns in the table:")
-st.write(pd.DataFrame(columns_df))
+# st.write("Columns in the table:")
+# st.write(pd.DataFrame(columns_df))
 
 # Get data and create DataFrame
 rows = run_query(f"SELECT * FROM `{connection_info['project_id']}.{connection_info['dataset_id']}.{connection_info['table_name']}`")
