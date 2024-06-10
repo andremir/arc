@@ -1,3 +1,5 @@
+
+
 import streamlit as st
 from google.oauth2 import service_account
 from google.cloud import bigquery
@@ -27,7 +29,7 @@ credentials = service_account.Credentials.from_service_account_info(
 )
 
 # Create API client for BigQuery
-client = bigquery.Client(credentials=credentials)
+client = bigquery.Client(credentials=credentials, project=connection_info["project_id"])
 
 # Perform query using BigQuery client
 @st.cache_data(ttl=600)  # Cache results for 600 seconds (10 minutes)
@@ -254,7 +256,3 @@ if pandasai_query:
     openai_api_key = st.secrets["openai"]["api_key"]
     agent = Agent(data)
     st.write(agent.chat(pandasai_query))
-
-    
-
-
