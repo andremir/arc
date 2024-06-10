@@ -11,6 +11,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import os
 import re
+from pandasai import Agent
 
 # Set page title and logo
 st.set_page_config(page_title='ARC')
