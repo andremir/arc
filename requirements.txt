@@ -1,14 +1,13 @@
 
-streamlit==1.35.0
 google-cloud-bigquery==3.24.0
-matplotlib==3.9.0
-toml==0.10.2
-google-auth==2.30.0
-SQLAlchemy==2.0.30
-sqlalchemy-bigquery==1.11.0
-openai==1.33.0
 langchain==0.2.3
 langchain-community==0.2.4
-plotly==5.22.0
+openai==1.33.0
 pandas==1.5.3
 pandasai==2.1.1
+plotly==5.22.0
+SQLAlchemy==2.0.30
+sqlalchemy-bigquery==1.11.0
+streamlit==1.35.0
+toml==0.10.2
+
